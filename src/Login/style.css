@@ -1,0 +1,508 @@
+/* Global Styles */
+
+
+
+
+
+
+/* Apply a background image with opacity */
+
+/* .login  .login-container-fluid {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.login  .login-card {
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  transition: filter 0.3s ease; 
+}
+
+.login  .login-card.brightness-on {
+  filter: brightness(1.5); 
+}
+
+.login  .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.login .popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login  .popup-buttons button {
+  margin: 10px;
+}
+ */
+
+
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  
+  
+  /* Apply background image to body with opacity */
+   /* body {
+    position: relative;
+    margin: 0;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://dubai-luxury.villas/uploads/images/2022-05/f6a29ae8f3c19d6afcc52fd49495f0ec.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1;  
+  }  */
+  
+  
+  /* In your style.css file */
+  .background-container {
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://dubai-luxury.villas/uploads/images/2022-05/f6a29ae8f3c19d6afcc52fd49495f0ec.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  
+  
+  /* Container for the login card */
+  .login .login-container-fluid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.4);  */
+  }
+  
+  /* Styling the login card */
+  .login .login-card {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      width: 100%;
+    max-width: 400px;
+    transition: filter 0.3s ease; /* Smooth transition for brightness */
+  }
+  
+  .login .login-card:hover
+  {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  
+  /* Apply brightness when the popup is shown */
+  .login .login-card.brightness-on {
+    filter: brightness(1.5); /* Increase brightness */
+  }
+  
+  /* Popup overlay and content */
+  .login .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .login .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login .popup-buttons button {
+    margin: 10px;
+  }
+  
+  
+  
+  .login .login-container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .login .login-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    /* margin-top: 150px !important; */
+  }
+  
+  /* Heading */
+  .login h2 {
+    font-size: 24px;
+    /* color: #007bff; */
+    color: orange;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Group */
+  .login .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .login input[type="tel"],
+  .login input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .login input[type="tel"]:focus,
+  .login input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .login button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  
+  /* Button Styles */
+  .login button.btn-warning {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .login button.btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  .login button.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #ccc;
+  
+  }
+  
+  .login button.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .login button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .login button.btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  .login button.reset-btn {
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+  }
+  
+  .login button.reset-btn:hover {
+    background-color: #e9ecef;
+    color: black;
+  }
+  
+  /* Error Message */
+  .login .error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Timer Display */
+  .login .timer-display {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #6c757d;
+  }
+  
+  /* Captcha */
+  .login .captcha-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .login .captcha-display {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+  }
+  
+  .login .captcha-input {
+    width: 150px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Toast Notifications */
+  .login .Toastify__toast {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .login .Toastify__toast--success {
+    background-color: white ;
+    color: #28a745;
+  }
+  
+  .login .Toastify__toast--error {
+    background-color: white;
+    color: red;
+  }
+  
+  .login .Toastify__toast--info {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  
+  /* For mobile screens (below 600px) */
+  @media (max-width: 600px) {
+    .login .login-card {
+      padding: 20px;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .login h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .login input[type="tel"],
+    .login input[type="text"],
+    .login .captcha-input {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .login button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .login .captcha-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .login .captcha-display {
+      width: auto;
+      margin-bottom: 10px;
+    }
+  
+    .login .timer-display {
+      font-size: 12px;
+    }
+  }
+  
+  /* For tablet screens (600px - 900px) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .login .login-card {
+      padding: 25px;
+      width: 100%;
+      max-width: 450px;
+    }
+  
+    .login h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  
+    .login input[type="tel"],
+    .login input[type="text"],
+    .login .captcha-input {
+      font-size: 15px;
+      padding: 11px;
+    }
+  
+    .login button {
+      font-size: 15px;
+      padding: 9px 14px;
+    }
+  
+    .login .captcha-container {
+      flex-direction: row;
+    }
+  
+    .login .captcha-display {
+      width: 100px;
+    }
+  
+    .login .timer-display {
+      font-size: 13px;
+    }
+  }
+  
+  /* For larger screens (above 900px) */
+  @media (min-width: 901px) {
+    .login .login-card {
+      max-width: 500px;
+    }
+  
+    .login h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .login input[type="tel"],
+    .login input[type="text"],
+    .login .captcha-input {
+      font-size: 16px;
+      padding: 12px;
+    }
+  
+    .login button {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  
+    .login .captcha-container {
+      flex-direction: row;
+    }
+  
+    .login .captcha-display {
+      width: 100px;
+    }
+  
+    .login .timer-display {
+      font-size: 14px;
+    }
+  }
+  
+  
+  
+  /* Popup Styles */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .popup-buttons {
+    margin-top: 20px;
+  }
+  
+  .popup-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .popup-buttons .btn-warning {
+    background-color: #ffc107;
+  }
+  
+  .popup-buttons .btn-danger {
+    background-color: #dc3545;
+  }
+  

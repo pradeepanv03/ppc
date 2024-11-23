@@ -1,0 +1,418 @@
+/* house.css  */
+
+/* Card Styles */
+.detail .card {
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 5px;
+  }
+
+  .detail  .card:hover
+  {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  /* Main Image Styles */
+  .detail  .main-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for the main image */
+  .detail  .main-image:hover {
+    transform: scale(1.05);
+  }
+
+/* Thumbnail Image Styles */
+.detail  .thumbnail-img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, border 0.3s ease, opacity 0.3s ease;
+    opacity: 1; /* Default opacity */
+  }
+  
+  /* Hover effect for thumbnail images */
+  .detail   .thumbnail-img:hover {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+    opacity: 0.7; /* Apply opacity when hovered */
+  }
+  
+  /* Hover effect for main image */
+  .detail  .main-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Button Styles */
+  .detail   .btn-info {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    /* background-color: #007bff;
+    border-color: #007bff; */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for button */
+  .detail  .btn-info:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+ 
+
+  .detail  .btn-success {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #077e15;
+    border-color: #077e15;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+  }
+  
+  /* Hover effect for button */
+  .detail  .btn-success:hover {
+    background-color: #0fc24a;
+    border-color: #0fc24a;
+  }
+
+  .detail   .btn-warning
+  {
+    border-radius:8px;
+    border:none;
+  }
+
+  
+  /* Card Text Styles */
+  .detail  .card-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .detail   .card-text {
+    color: #555;
+  }
+  
+  .detail   .features-section {
+    padding: 30px 20px;
+  }
+  
+  .detail  .features-section h2 {
+    font-weight: bold;
+  }
+  
+  /* Feature List Styles */
+  .detail  ul {
+    padding-left: 20px;
+  }
+  
+  .detail  li {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .detail  li input {
+    margin-right: 10px;
+  }
+  
+  /* Mobile View Styles */
+  @media (max-width: 767px) {
+    .main-image {
+      height: 250px;
+    }
+  
+    .thumbnail-img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .features-section {
+      padding: 15px 10px;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  }
+  
+
+/* Card Styles */
+.detail  .card {
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+  
+  /* Property Details Section */
+  .detail  .property-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .detail   .property-details:hover
+  {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  /* Title Style */
+  .detail  .property-details h2 {
+    font-weight: bold;
+    color: purple;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Property Feature List */
+  .detail  .property-details .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Feature List Item Style */
+  .detail  .property-details .feature-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Icon Style */
+  .detail  .property-details .feature-list li i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: #007bff;
+  }
+  
+  /* Property Description */
+  .detail  .property-description {
+    margin-top: 20px;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Spacing for Multiple Paragraphs */
+  .detail   .property-description p {
+    margin-bottom: 20px;
+  }
+  
+  /* Small Icons for Property Details (sq-ft, bedrooms, etc.) */
+  .detail  .property-details .property-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Additional Styling for Small Info */
+  .detail   .property-info i {
+    font-size: 1.3rem;
+    color: #71757ae6;
+    /* margin-top: 3px; */
+    margin-right: 5px;
+  }
+
+  .detail  .property-info h2
+  {
+    font-weight: bold;
+    color: purple;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+  }
+
+
+/* In House.css */
+.detail  .ground-floor-3d {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.detail  .ground-floor-3d img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.detail  .btn-link {
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.detail  .container-fluid
+{
+  padding: 20px;
+  opacity: 0.5;
+}
+
+.detail  .property-info .fas
+{
+  color: #e77ad9;
+}
+
+
+.detail  h2
+{
+  color: purple;
+}
+
+
+
+/* Light Mode (default) */
+.detail  body {
+  background-color: white;
+  color: black;
+}
+
+.detail .card {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .card {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .card .card-title,
+body.dark-mode .card .card-text {
+  color: white;
+}
+
+body.dark-mode .carousel-caption h1, body.dark-mode .carousel-caption h3 {
+  color: white;
+}
+
+body.dark-mode .btn-primary,
+body.dark-mode .btn-success,
+body.dark-mode .btn-warning {
+  background-color: #007bff;
+}
+
+
+/* In House.css or your main CSS file */
+.fixed-arrows {
+  position: fixed;
+  right: 20px;
+  z-index: 1000;
+}
+
+.arrow-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  margin: 10px 0;
+}
+
+.up-arrow {
+  bottom: 10px;
+}
+
+.down-arrow {
+  top: 10px;
+}
+
+.arrow-btn:hover {
+  color: #007bff;
+}
+
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  /* background-color: #121212; */
+  color: white;
+}
+
+body.dark-mode .card {
+  /* background-color: #1e1e1e; */
+  border-color: #333;
+}
+
+body.dark-mode .bt {
+  /* background-color: #333; */
+  color: black;
+}
+
+body.dark-mode .carousel-image {
+  filter: brightness(0.8);
+}
+
+body.dark-mode .thumbnail-img {
+  border: 2px solid #333;
+}
+
+/* Scroll Arrows (Fixed Position) */
+.scroll-arrow-up, .scroll-arrow-down {
+  position: fixed;
+  left: 20px;
+  z-index: 1000;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.scroll-arrow-up {
+  bottom: 20px; /* Fixed to the bottom-left */
+}
+
+.scroll-arrow-down {
+  top: 20px; /* Fixed to the top-left */
+}
+
+/* Thumbnail Image Styles */
+.thumbnail-img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-img:hover {
+  transform: scale(1.1);
+}
+
+/* Carousel Image */
+.carousel-image {
+  object-fit: cover;
+}
+
+
+
+
+body.dark-mode .bt {
+  /* background-color: #333; */
+  border: none;
+}
+
